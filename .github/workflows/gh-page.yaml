@@ -22,11 +22,18 @@ jobs:
           bun install
 
       - name: Build
-        run: bun run docs:build
+        run: | 
+          bun run docs:build
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: .vitepress/dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: docs/.vitepress/dist
