@@ -5,6 +5,7 @@ export default defineConfig({
   title: "RuyiSDK documentation",
   description: "RuyiSDK documentation",
   lastUpdated: true,
+  base: '/RuyiSDK-test/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
