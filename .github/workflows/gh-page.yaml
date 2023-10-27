@@ -2,6 +2,8 @@ name: gh-page
 
 on: push
 
+permissions: write-all
+
 jobs:
   deploy:
     name: deploy
