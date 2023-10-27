@@ -8,9 +8,6 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./docs
     steps:
       - uses: actions/checkout@v4
 
@@ -19,16 +16,17 @@ jobs:
 
       - name: Install deps
         run: |
-          bun install
+          cd docs && bun install
 
       - name: Build
-        run: bun run docs:build
-
+        run: | 
+          cd docs && bun run docs:build
+      
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: .vitepress/dist
+          path: docs/.vitepress/dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
