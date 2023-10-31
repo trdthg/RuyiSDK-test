@@ -294,7 +294,7 @@ msgstr ""
 
 #: ./ruyi-package/index.md:block 1 (header)
 msgid "Ruyi 包管理器"
-msgstr ""
+msgstr "Ruyi Package Manager"
 
 #: ./ruyi-package/index.md:block 2 (paragraph)
 msgid "Ruyi 包管理器是设计为用于 RuyiSDK 的包管理器，用于管理工具链。"
@@ -302,7 +302,7 @@ msgstr ""
 
 #: ./ruyi-package/index.md:block 3 (header)
 msgid "安装包管理器"
-msgstr ""
+msgstr "Install"
 
 #: ./ruyi-package/index.md:block 4 (paragraph)
 msgid ""
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ./ruyi-package/index.md:block 8 (header)
 msgid "命令"
-msgstr ""
+msgstr "Commands"
 
 #: ./ruyi-package/index.md:block 9 (header)
 msgid "Update"
