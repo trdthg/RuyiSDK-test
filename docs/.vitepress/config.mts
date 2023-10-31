@@ -24,6 +24,7 @@ export default defineConfig({
       }
     }
   },
+  base: '/RuyiSDK-test/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -40,7 +41,8 @@ export default defineConfig({
         link: '/tools/index',
         items: [
           { text: 'ruyibuild', link: '/tools/ruyibuild' },
-          { text: 'ruyishell', link: '/tools/ruyishell' }
+          { text: 'ruyishell', link: '/tools/ruyishell' },
+          { text: 'Ruyi 包管理器', link: '/ruyi-package/' }
         ]
       },
       {
@@ -174,7 +176,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ruyisdk/' }
     ]
   }
 })

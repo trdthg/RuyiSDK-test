@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "RuyiSDK 文档"
-  text: "Your best risc-v toolkit in the world!"
+  text: "Maybe your best RISC-V toolkit in the world!"
   tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。
   actions:
     - theme: brand
@@ -12,7 +12,7 @@ hero:
       link: /introduction/index
     - theme: alt
       text: Github
-      link: https://github.com/ArielHeleneto/RuyiSDK-test
+      link: https://github.com/ruyisdk/ruyi
 
 features:
   - title: RISCV-GCC
