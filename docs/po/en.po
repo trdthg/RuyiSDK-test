@@ -1,0 +1,1720 @@
+#
+msgid ""
+msgstr ""
+
+#: ./api-examples.md:block 1 (header)
+msgid "outline: deep"
+msgstr ""
+
+#: ./api-examples.md:block 2 (header)
+msgid "Runtime API Examples"
+msgstr ""
+
+#: ./api-examples.md:block 3 (paragraph)
+msgid ""
+"This page demonstrates usage of some of the runtime APIs provided by "
+"VitePress."
+msgstr ""
+
+#: ./api-examples.md:block 4 (paragraph)
+msgid ""
+"The main `useData()` API can be used to access site, theme, and page data "
+"for the current page. It works in both `.md` and `.vue` files:"
+msgstr ""
+
+#: ./api-examples.md:block 7 (header)
+msgid "Results"
+msgstr ""
+
+#: ./api-examples.md:block 8 (header)
+msgid "Theme Data"
+msgstr ""
+
+#: ./api-examples.md:block 10 (header)
+msgid "Page Data"
+msgstr ""
+
+#: ./api-examples.md:block 12 (header)
+msgid "Page Frontmatter"
+msgstr ""
+
+#: ./api-examples.md:block 14 (header)
+msgid "More"
+msgstr ""
+
+#: ./api-examples.md:block 15 (paragraph)
+msgid ""
+"Check out the documentation for the [full list of runtime "
+"APIs](https://vitepress.dev/reference/runtime-api#usedata)."
+msgstr ""
+
+#: ./benchmark/coremark.md:block 1 (header)
+msgid "运行 Coremark"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 2 (paragraph)
+msgid ""
+"这里我们从零开始，安装 ruyisdk 并编译运行 Coremark。ruyisdk 包含 ruyibuild 和 ruyishell "
+"两个工具，ruyibuild 可用于下>载工具链源码，从源码构建工具链。如果我们想要开箱即用，那么可以选择 ruyishell。这里我们也是介绍使用 "
+"ruyishell 交叉编译 Coremark 的步骤。"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 3 (header)
+msgid "安装 ruyishell"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 4 (paragraph)
+msgid "ruyishell 是一个辅助开发工具，不需要手动搭建复杂的环境和下载代码，只需要几条命名，就可以直接获取所需要的构建>好的软件包。"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 5 (paragraph)
+msgid "假设我们的 shell 是 bash（大多数情况可能是这样），那么需要先安装 zsh。"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 6 (ordered list)
+msgid "安装 zsh"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 6 (ordered list)
+msgid "下载 ruyishell 仓库"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 6 (ordered list)
+msgid "运行 install.sh 安装 ruyishell"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 6 (ordered list)
+msgid "安装成功显示如下："
+msgstr ""
+
+#: ./benchmark/coremark.md:block 6 (ordered list)
+msgid "（如果在安装依赖时脚本就退出了，没有成功安装的话，可以先执行一下 sudo apt update 命令）"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 7 (header)
+msgid "下载工具链"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 8 (paragraph)
+msgid ""
+"Ruyi 提供多种编译环境，可以在 repo.xml 中查看支持的 SDK 环境，以及对应的 SDKid。这里我们选择\"基于 sg2042 的 "
+"riscv64gc gcc 开发环境\"，它的 sdkid 是 1。我们执行下面的命令来安装："
+msgstr ""
+
+#: ./benchmark/coremark.md:block 10 (paragraph)
+msgid "这样我们就通过 ruyi 安装好了 riscv64gc 的 SDK 环境。测试一下是否成功："
+msgstr ""
+
+#: ./benchmark/coremark.md:block 12 (header)
+msgid "交叉编译 Coremark"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 13 (ordered list)
+msgid "下载 Coremark"
+msgstr ""
+
+#: ./benchmark/coremark.md:block 13 (ordered list)
+msgid ""
+"编译成功会看到 coremark 目录下生成了 coremark.exe，将 coremark.exe 拷贝到我们的 riscv 开发板或者 Qemu "
+"上就可以运行了。"
+msgstr ""
+
+#: ./benchmark/index.md:block 1 (header)
+msgid "title: 运行 Benchmarks"
+msgstr ""
+
+#: ./benchmark/index.md:block 2 (paragraph)
+msgid "本章介绍如何使用 RuyiSDK 来运行 benchmark，例如 Coremark，帮助新手用户快速上手 RuyiSDK 的使用。"
+msgstr ""
+
+#: ./benchmark/index.md:block 3 (paragraph)
+msgid "::: {.toctree maxdepth=\"1\"} coremark.rst :::"
+msgstr ""
+
+#: ./index.md:block 1 (header)
+msgid "https://vitepress.dev/reference/default-theme-home-page"
+msgstr ""
+
+#: ./index.md:block 2 (paragraph)
+msgid "layout: home"
+msgstr ""
+
+#: ./index.md:block 3 (paragraph)
+msgid ""
+"hero: name: \"RuyiSDK 文档\" text: \"Your best risc-v toolkit in the world!\" "
+"tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand text: 快速开始 "
+"link: /introduction/index - theme: alt text: Github link: "
+"https://github.com/ArielHeleneto/RuyiSDK-test"
+msgstr ""
+"hero: name: \"RuyiSDK Doc\" text: \"Your best risc-v toolkit in the world!\" "
+"tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand text: 快速开始 "
+"link: /introduction/index - theme: alt text: Github link: "
+"https://github.com/ArielHeleneto/RuyiSDK-test"
+
+#: ./index.md:block 4 (paragraph)
+msgid "features:"
+msgstr ""
+
+#: ./index.md:block 5 (unordered list)
+msgid ""
+"title: RISCV-GCC details: Lorem ipsum dolor sit amet, consectetur adipiscing"
+" elit"
+msgstr ""
+
+#: ./index.md:block 5 (unordered list)
+msgid ""
+"title: LLVM details: Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+msgstr ""
+
+#: ./index.md:block 5 (unordered list)
+msgid ""
+"title: QEMU details: Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+msgstr ""
+
+#: ./markdown-examples.md:block 1 (header)
+msgid "Markdown Extension Examples"
+msgstr ""
+
+#: ./markdown-examples.md:block 2 (paragraph)
+msgid ""
+"This page demonstrates some of the built-in markdown extensions provided by "
+"VitePress."
+msgstr ""
+
+#: ./markdown-examples.md:block 3 (header)
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: ./markdown-examples.md:block 4 (paragraph)
+msgid ""
+"VitePress provides Syntax Highlighting powered by "
+"[Shiki](https://github.com/shikijs/shiki), with additional features like "
+"line-highlighting:"
+msgstr ""
+
+#: ./markdown-examples.md:block 5 (paragraph)
+msgid "**Input**"
+msgstr ""
+
+#: ./markdown-examples.md:block 7 (paragraph)
+msgid "**Output**"
+msgstr ""
+
+#: ./markdown-examples.md:block 9 (header)
+msgid "Custom Containers"
+msgstr ""
+
+#: ./markdown-examples.md:block 13 (paragraph)
+msgid "::: info This is an info box. :::"
+msgstr ""
+
+#: ./markdown-examples.md:block 14 (paragraph)
+msgid "::: tip This is a tip. :::"
+msgstr ""
+
+#: ./markdown-examples.md:block 15 (paragraph)
+msgid "::: warning This is a warning. :::"
+msgstr ""
+
+#: ./markdown-examples.md:block 16 (paragraph)
+msgid "::: danger This is a dangerous warning. :::"
+msgstr ""
+
+#: ./markdown-examples.md:block 17 (paragraph)
+msgid "::: details This is a details block. :::"
+msgstr ""
+
+#: ./markdown-examples.md:block 19 (paragraph)
+msgid ""
+"Check out the documentation for the [full list of markdown "
+"extensions](https://vitepress.dev/guide/markdown)."
+msgstr ""
+
+#: ./plan/index.md:block 1 (header)
+msgid "title: 版本规划路线图"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/index.md:block 1 (paragraph)
+msgid ""
+"RISC-V 的支持 B,P,V0.7.1，玄铁自定义系列，ZFH 扩展 xthead 的 gcc 工具链 rv64gcbpv_xthead_zfh"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 1 (header)
+msgid "title: 支持 B,P,V,Xthead,Zfh 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 2 (paragraph)
+msgid "安装构建依赖 (如有后续构建提示缺失，可根据错误信息全依赖)"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 3 (paragraph)
+msgid "::: tabs ::: code-tab bash Ubuntu 环境"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 4 (paragraph)
+msgid ""
+"apt-get install -y make diffutils autoconf automake autotools-dev curl "
+"python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential "
+"bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev "
+"ninja-build git cmake libglib2.0-dev :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 5 (paragraph)
+msgid "::: code-tab bash OpenEuler/RevyOS环境"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 6 (paragraph)
+msgid ""
+"dnf install -y make diffutils autoconf automake python3 libmpc-devel mpfr-"
+"devel gmp-devel gawk bison flex texinfo patchutils gcc gcc-c++ zlib-devel "
+"expat-devel :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 7 (paragraph)
+msgid "::: code-tab bash Fedora/CentOS环境"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 8 (paragraph)
+msgid ""
+"sudo yum install -y make diffutils autoconf automake python3 libmpc-devel "
+"mpfr-devel gmp-devel gawk bison flex texinfo patchutils gcc gcc-c++ zlib-"
+"devel expat-devel ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 9 (paragraph)
+msgid "下载 riscv-gnu-toolchain，切换至 gcc-10 分支："
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 11 (paragraph)
+msgid "构建准备------进入 riscv-gnu-toolchain 目录，建立 build 文件夹，用于存放构建生成的工具链："
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 13 (paragraph)
+msgid "配置构建参数，以启用不同扩展"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 15 (paragraph)
+msgid "配置完成后进行构建（如果出现报错，请记录错误信息并进行反馈）"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 17 (paragraph)
+msgid "构建完成后，检查是否构建成功 (这里以标准 64 位工具链为例，32 位工具链注意替换工具链名称)"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_compile_and_use.md:block
+#: 19 (paragraph)
+msgid "RuyiSDK 是"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 1
+#: (header)
+msgid "title: 使用 ruyibuild 构建"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 2
+#: (paragraph)
+msgid "创建编译的虚拟环境 (如已配置，可跳过)"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 3
+#: (paragraph)
+msgid "更新 pip(可选)"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 5
+#: (paragraph)
+msgid "安装 virtualenv 和 virtualenvwrapper"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 7
+#: (paragraph)
+msgid "在.bashrc 中添加配置"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 9
+#: (paragraph)
+msgid "使能.bashrc 配置从而可以使用 python 虚拟环境"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 11
+#: (paragraph)
+msgid "创建虚拟环境用于编译，例如"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 13
+#: (paragraph)
+msgid "至此，python 的虚拟环境配置完成，ruyibuild 的安装和使用可在虚拟环境中进行，而不影响 host 机 python 环境"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 14
+#: (paragraph)
+msgid "安装 ruyibuild"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 16
+#: (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64all.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 17
+#: (paragraph)
+msgid "::: tabs ::: code-tab bash Ubuntu"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 18
+#: (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcbpv_xthead_zfh/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 19
+#: (paragraph)
+msgid "::: code-tab bash openEuler"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 20
+#: (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcbpv_xthead_zfh/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 21
+#: (paragraph)
+msgid "初始化工作"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 22
+#: (paragraph)
+msgid ": 执行以下命令创建工作目录, 后续自动下载的源码以及构建生成的软件包都会在此目录下"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 24
+#: (paragraph)
+msgid "准备构建环境和代码"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 26
+#: (paragraph)
+msgid "执行构建"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyibuild.md:block 28
+#: (paragraph)
+msgid "生成目标 toolchain"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 1
+#: (header)
+msgid "title: 使用 ruyishell 下载测试"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 2
+#: (paragraph)
+msgid "::: tabs 编写测试用例"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 3
+#: (paragraph)
+msgid "::: code-tab c demo"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 4
+#: (paragraph)
+msgid "struct bar { long a:9; long b:26; long c:22; };"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 5
+#: (paragraph)
+msgid "long foo (struct bar \\*s) { return s->b; } :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 6
+#: (paragraph)
+msgid "::: code-tab bash build"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcbpv_xthead_zfh/rv64gcbpv_xthead_zfh_ruyishell.md:block 7
+#: (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否启用全部扩展 build/bin/riscv64-unknown-linux-gnu-gcc "
+"all.c -S cat all.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 P 扩展的 gcc 工具链 rv64gcp"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gcp_compile_and_use.rst "
+"rv64gcp_ruyibuild.rst rv64gcp_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_compile_and_use.md:block 1 (header)
+msgid "title: 支持 P 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gcp.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcp/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcp/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyishell.md:block 4 (paragraph)
+msgid "#include <riscv-dsp.h>"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyishell.md:block 5 (paragraph)
+msgid "int64_t test_kmada32(int64_t t, uint64_t a, uint64_t b) {"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyishell.md:block 6 (paragraph)
+msgid ": return __rv__kmada32 (t, a, b);"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyishell.md:block 7 (paragraph)
+msgid "} :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcp/rv64gcp_ruyishell.md:block 9 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 P 扩展指令 kmada32 build/bin/riscv64-unknown-linux-"
+"gnu-gcc dsp.c -S cat dsp.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 V 扩展 (0.7.1) 的 gcc 工具链 rv64gcv"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gcv0p7_compile_and_use.rst "
+"rv64gcv0p7_ruyibuild.rst rv64gcv0p7_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_compile_and_use.md:block 1 (header)
+msgid "title: 支持 RVV(0.7.1) 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gcv.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcv0p7/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcv0p7/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyishell.md:block 4 (paragraph)
+msgid "#include <riscv_vector.h> #include <string.h>"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyishell.md:block 5 (paragraph)
+msgid ""
+"// reference <https://github.com/riscv/riscv-v-"
+"spec/blob/master/example/strcpy.s> char *strcpy_vec(char*dst, const char "
+"*src) { char*save = dst; size_t vlmax = vsetvlmax_e8m8(); long first_set_bit"
+" = -1; size_t vl; while (first_set_bit < 0) { src += vl; dst += vl; } return"
+" save; } :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcv0p7/rv64gcv0p7_ruyishell.md:block 7 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 V 扩展指令 vsetvli build/bin/riscv64-unknown-linux-"
+"gnu-gcc vector.c -S cat vector.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/index.md:block 1 (header)
+msgid "title: RISC-V 的支持玄铁自定义系列扩展 xthead 的 gcc 工具链 rv64gcxthead"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} "
+"rv64gcxthead_compile_and_use.rst rv64gcxthead_ruyibuild.rst "
+"rv64gcxthead_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/rv64gcxthead_compile_and_use.md:block 1 (header)
+msgid "title: 支持 xthead 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/rv64gcxthead_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gcxthead.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/rv64gcxthead_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcxthead/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/rv64gcxthead_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcxthead/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc10-rv64gcxthead/rv64gcxthead_ruyishell.md:block 7 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 xthead 指令 th.ext build/bin/riscv64-unknown-"
+"linux-gnu-gcc xthead.c -S cat xthead.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 EABI 的 gcc 工具链 rv32e"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv32e_compile_and_use.rst "
+"rv32e_ruyibuild.rst rv32e_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e.md:block 4 (paragraph)
+msgid "// 测试用例示例 fadd.c float foo(float a, float b){ return a+b; }"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e.md:block 5 (paragraph)
+msgid "int main(){"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e.md:block 6 (paragraph)
+msgid ": foo(1.0,2.0); return 0;"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e.md:block 9 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看反汇编文件中是否使用软浮点指令__addsf3 build/bin/riscv64-unknown-linux-"
+"gnu-gcc -S foo.c ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_compile_and_use.md:block 1 (header)
+msgid "title: 支持 EABI 构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_compile_and_use.md:block 9 (paragraph)
+msgid "下载 riscv-gnu-toolchain:"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_compile_and_use.md:block 17 (paragraph)
+msgid "构建完成后，检查是否构建成功 (这里以 32 位工具链为例)"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv32izfinx.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv32e/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32e/rv32e_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv32e/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/index.md:block 1 (header)
+msgid "title: RISC-V 的标准 gcc 工具链 rv32gc"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv32gc_compile_and_use.rst "
+"rv32gc_ruyibuild.rst rv32gc_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv32gc_compile_and_use.md:block 1 (header)
+msgid "title: 通用 32 位 RISCV-GNU-Toolchain 的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv32gc_compile_and_use.md:block 17 (paragraph)
+msgid "构建完成后，检查是否构建成功 (这里以标准 32 位工具链为例，64 位工具链注意替换工具链名称)"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv32ilp32.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gc/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gc/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyishell.md:block 3 (paragraph)
+msgid "::: code-tab C demo"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyishell.md:block 4 (paragraph)
+msgid ""
+"//测试用例示例 ruyi.c #include \"stdio.h\" int main(){ printf(\"Hello RUYISDKn\");"
+" return 0; } :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32gc/rv64gc_ruyishell.md:block 6 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 RISC-V 指令 build/bin/riscv64-unknown-linux-gnu-"
+"gcc -S ruiyi.c cat ruyi.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 Zfinx 扩展的 gcc 工具链 rv32izfinx"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv32izfinx_compile_and_use.rst "
+"rv32izfinx_ruyibuild.rst rv32izfinx_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/rv32izfinx_compile_and_use.md:block 1 (header)
+msgid "title: 支持 Zfinx 扩展构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/rv32izfinx_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv32izfinx/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/rv32izfinx_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv32izfinx/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv32izfinx/rv32izfinx_ruyishell.md:block 9 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看反汇编文件中是否将浮点运算指令 fadd.s 后使用的浮点寄存器（fa\\*）替换为整型寄存器 (a\\*) "
+"build/bin/riscv64-unknown-linux-gnu-gcc -S foo.c ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gc/index.md:block 1 (header)
+msgid "title: RISC-V 的标准 gcc 工具链 rv64gc"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gc/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gc_compile_and_use.rst "
+"rv64gc_ruyibuild.rst rv64gc_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gc/rv64gc_compile_and_use.md:block 1 (header)
+msgid "title: 通用 riscv64gc 的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 B(位操作) 扩展的 gcc 工具链 rv64gcb"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gcb_compile_and_use.rst "
+"rv64gcb_ruyibuild.rst rv64gcb_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_compile_and_use.md:block 1 (header)
+msgid "title: 支持 Bitmanip 扩展构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gcb.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcb/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcb/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyishell.md:block 4 (paragraph)
+msgid ""
+"//测试用例示例 bitmanip.c unsigned long long foo1(unsigned long long rs1, unsigned"
+" long long rs2) { return rs1 & ~rs2; }"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyishell.md:block 5 (paragraph)
+msgid ""
+"unsigned long long foo2(unsigned long long rs1, unsigned long long rs2) { "
+"return rs1 | ~rs2; }"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyishell.md:block 6 (paragraph)
+msgid ""
+"unsigned long long foo3(unsigned long long rs1, unsigned long long rs2) { "
+"return rs1 ^ ~rs2; } :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcb/rv64gcb_ruyishell.md:block 8 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 Bitmanip 扩展指令 andn，orn,xnor "
+"build/bin/riscv64-unknown-linux-gnu-gcc -S bitmanip.c cat bitmanip.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 K（密码学 - 标量）扩展的 gcc 工具链 rv64gck"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gck_compile_and_use.rst "
+"rv64gck_ruyibuild.rst rv64gck_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_compile_and_use.md:block 1 (header)
+msgid "title: 支持 Scalar Crypto 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gck.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gck/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gck/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyishell.md:block 4 (paragraph)
+msgid "// 测试用例示例 crypto.c #include <stdint-gcc.h>"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyishell.md:block 5 (paragraph)
+msgid ""
+"int64_t foo1(int64_t rs1, int64_t rs2) { return "
+"__builtin_riscv_aes64ds(rs1,rs2); }"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyishell.md:block 6 (paragraph)
+msgid ""
+"int64_t foo2(int64_t rs1, int64_t rs2) { return "
+"__builtin_riscv_aes64ks1i(rs1,rs2); } :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gck/rv64gck_ruyishell.md:block 8 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 K 扩展指令 aes64ds,aes64ks1i "
+"build/bin/riscv64-unknown-linux-gnu-gcc -S crypto.c cat crypto.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 V 扩展的 gcc 工具链 rv64gcv"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gcv_compile_and_use.rst "
+"rv64gcv_ruyibuild.rst rv64gcv_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_compile_and_use.md:block 1 (header)
+msgid "title: 支持 RVV1.0 扩展的构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gcv/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gcv/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 4 (paragraph)
+msgid "// 测试用例示例 rvv_strcpy.c #include <riscv_vector.h> #include <string.h>"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 5 (paragraph)
+msgid ""
+"// reference <https://github.com/riscv/riscv-v-"
+"spec/blob/master/example/strcpy.s> char *strcpy_vec(char*dst, const char "
+"*src) { char*save = dst; size_t vlmax = __riscv_vsetvlmax_e8m8(); long "
+"first_set_bit = -1; size_t vl; while (first_set_bit < 0) { vint8m8_t vec_src"
+" = __riscv_vle8ff_v_i8m8(src, &vl, vlmax);"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 6 (quote)
+msgid ""
+"vbool1_t string_terminate = __riscv_vmseq_vx_i8m8_b1(vec_src, 0, vl); "
+"vbool1_t mask = __riscv_vmsif_m_b1(string_terminate, vl);"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 6 (quote)
+msgid "__riscv_vse8_v_i8m8_m(mask, dst, vec_src, vl);"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 6 (quote)
+msgid "src += vl; dst += vl;"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 6 (quote)
+msgid ""
+"first_set_bit = __riscv_vfirst_m_b1(string_terminate, vl); } return save;"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gcv/rv64gcv_ruyishell.md:block 9 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看汇编文件中是否使用 V 扩展指令 "
+"vsetvli,vle8ff.v,vmseq.vi,vmsif.m,vse8.v,vfirst.m build/bin/riscv64-unknown-"
+"linux-gnu-gcc rvv_strcpy.c -O3 -S cat rvv_strcpy.s ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/index.md:block 1 (header)
+msgid "title: RISC-V 的支持 ZC 扩展的 gcc 工具链 rv64gzc"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64gzc_compile_and_use.rst "
+"rv64gzc_ruyibuild.rst rv64gzc_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_compile_and_use.md:block 1 (header)
+msgid "title: 支持 ZC 扩展构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64gzc.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_ruyibuild.md:block 18 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/ubuntu/22.04/rv64gzc/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_ruyibuild.md:block 20 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64gzc/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_ruyishell.md:block 4 (paragraph)
+msgid ""
+"// 测试用例示例 zc.s zcb_lbu: # test to compress lbu lbu x8,2(x10) # test c.lbu "
+"c.lbu x9,1(x8) :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64gzc/rv64gzc_ruyishell.md:block 6 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看反汇编文件中是否对 lbu 指令进行了压缩 build/bin/riscv64-unknown-linux-gnu-"
+"as zc.s -march=rv64g_zca_zcb -c -o zc.elf build/bin/riscv64-unknown-linux-"
+"gnu-objdump -d -Mno-aliases zc.elf ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/index.md:block 1 (header)
+msgid "title: RISC-V 的标准 gcc 工具链 rv64ilp32"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} rv64ilp32_compile_and_use.rst "
+"rv64ilp32_ruyibuild.rst rv64ilp32_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_compile_and_use.md:block 1 (header)
+msgid "title: 支持 rv64ilp32 扩展构建和使用"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_compile_and_use.md:block 6 (paragraph)
+msgid ""
+"dnf install -y make diffutils autoconf automake python3 libmpc-devel mpfr-"
+"devel gmp-devel gawk bison flex texinfo patchutils gcc gcc-c++ zlib-devel "
+"expat-devel ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_compile_and_use.md:block 9 (paragraph)
+msgid "构建准备 (以 gcc13 为例),进入 riscv-gnu-toolchain 目录，建立 build 文件夹，用于存放构建生成的工具链："
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_compile_and_use.md:block 12 (quote)
+msgid "支持 RV64ILP32 特性的构建 (rv64-ilp32)"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_compile_and_use.md:block 14 (paragraph)
+msgid "配置完成后进行构建"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 16 (paragraph)
+msgid "创建编译配置用于初始化，例如 rv64ilp32.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 17 (paragraph)
+msgid "::: tabs ::: tab Ubuntu"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 18 (paragraph)
+msgid "config_file:"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 19 (paragraph)
+msgid "repo_url: <https://github.com/ruyisdk/ruyici.git>"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 20 (paragraph)
+msgid "branch: main"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 21 (paragraph)
+msgid "path: gcc/ubuntu/22.04/rv64ilp32/config.yaml :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 22 (paragraph)
+msgid "::: tab openEuler"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyibuild.md:block 23 (paragraph)
+msgid ""
+"config_file: repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main "
+"path: gcc/openeuler/23.03/rv64ilp32/config.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyishell.md:block 5 (paragraph)
+msgid ": return 0;"
+msgstr ""
+
+#: ./sdk/gcc13-rv64ilp32/rv64ilp32_ruyishell.md:block 8 (paragraph)
+msgid ""
+"# 使用构建的工具编译测试用例，查看 elf 文件属性是否为 64 位 ILP32ABI build/bin/riscv64-unknown-"
+"linux-gnu-gcc main.c -o main.elf build/bin/riscv64-unknown-linux-gnu-readelf"
+" -h main.elf ::: :::"
+msgstr ""
+
+#: ./sdk/index.md:block 1 (header)
+msgid "title: RuyiSDK"
+msgstr ""
+
+#: ./sdk/index.md:block 3 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\"} gcc13-rv64gc/index.rst gcc13-rv64gcb/index.rst"
+" gcc13-rv64gck/index.rst gcc13-rv64gcv/index.rst gcc13-rv64gzc/index.rst "
+"gcc13-rv32izfinx/index.rst gcc12-rv64ilp32/index.rst gcc10-rv64gcp/index.rst"
+" gcc10-rv64gcv0p7/index.rst gcc10-rv64gcxthead/index.rst qemu/index.rst "
+"llvm/index.rst :::"
+msgstr ""
+
+#: ./sdk/llvm/index.md:block 1 (header)
+msgid "title: RISC-V 的 LLVM 工具链"
+msgstr ""
+
+#: ./sdk/llvm/index.md:block 2 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} llvm_compile_and_use.rst "
+"llvm_ruyibuild.rst llvm_ruyishell.rst :::"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 1 (header)
+msgid "LLVM 的构建和使用"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 2 (paragraph)
+msgid ""
+"目前支持的所有扩展见： <https://github.com/ruyisdk/llvm-"
+"project/blob/main/llvm/docs/RISCVUsage.rst>"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 3 (header)
+msgid "构建"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 5 (header)
+msgid "交叉编译"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 6 (paragraph)
+msgid "需要使用 riscv-gnu-toolchain，可以从 riscv-gnu-toolchain/releases 中下载"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 8 (paragraph)
+msgid "以 riscv64-elf-ubuntu-22.04-nightly-2023.06.09-nightly.tar.gz 为例"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 10 (paragraph)
+msgid "编译 helloworld"
+msgstr ""
+
+#: ./sdk/llvm/llvm_compile_and_use.md:block 12 (paragraph)
+msgid "riscv 环境下本地编译"
+msgstr ""
+
+#: ./sdk/llvm/llvm_ruyibuild.md:block 1 (header)
+msgid "使用 ruyibuild 构建"
+msgstr ""
+
+#: ./sdk/llvm/llvm_ruyibuild.md:block 2 (quote)
+msgid "创建编译配置用于初始化，例如：config_llvm15.yaml"
+msgstr ""
+
+#: ./sdk/llvm/llvm_ruyibuild.md:block 2 (quote)
+msgid ": 执行以下命令创建工作目录， 后续自动下载的源码以及构建生成的软件包都会在此目录下"
+msgstr ""
+
+#: ./sdk/llvm/llvm_ruyishell.md:block 1 (header)
+msgid "使用 ruyishell 下载测试"
+msgstr ""
+
+#: ./sdk/qemu/index.md:block 1 (header)
+msgid "title: RUYI QEMU"
+msgstr ""
+
+#: ./sdk/qemu/index.md:block 2 (paragraph)
+msgid ""
+"RUYI QEMU 是 RUYISDK 项目维护的一个 QEMU 分支，诣在为 RUYISDK 项目提供对各种 RISC-V "
+"硬件平台的软模拟支持，为开发者提供更方便快捷的开发平台。"
+msgstr ""
+
+#: ./sdk/qemu/index.md:block 3 (paragraph)
+msgid ""
+"::: {.toctree maxdepth=\"1\" caption=\"内容\"} qemu_compile_and_use.rst "
+"qemu_ruyibuild.rst :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 1 (header)
+msgid "QEMU 的构建和使用"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 2 (header)
+msgid "编译构建 QEMU"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 3 (paragraph)
+msgid "安装依赖工具和库："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 4 (paragraph)
+msgid "::: tabs ::: code-tab bash Ubuntu 22.04"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 5 (paragraph)
+msgid ""
+"apt update apt install -y gcc git make ninja-build python3 python3-pip "
+"libglib2.0-dev libpixman-1-dev libslirp-dev :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 6 (paragraph)
+msgid "::: code-tab bash Ubuntu 22.04(static)"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 7 (paragraph)
+msgid ""
+"apt update apt install -y gcc git make ninja-build python3 python3-pip "
+"libglib2.0-dev libpixman-1-dev :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 8 (paragraph)
+msgid "::: code-tab bash OpenEuler 22.03/23.03"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 9 (paragraph)
+msgid ""
+"yum install -y gcc git make glib2-devel.x86_64 ninja-build libcap-ng-"
+"devel.x86_64 libattr-devel.x86_64 libslirp-devel.x86_64 :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 10 (paragraph)
+msgid "::: code-tab bash OpenEuler 22.03/23.03(static)"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 11 (paragraph)
+msgid ""
+"yum install -y gcc git make glib2-devel.x86_64 ninja-build libcap-ng-"
+"devel.x86_64 libattr-devel.x86_64 glib2-static.x86_64 ::: :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 12 (paragraph)
+msgid "下载 RUYI QEMU 源码："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 14 (paragraph)
+msgid "编译构建："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 15 (paragraph)
+msgid "::: tabs ::: code-tab bash 普通编译"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 16 (paragraph)
+msgid ""
+"mkdir build cd build ../configure --target-"
+"list=riscv64-softmmu,riscv64-linux-user,riscv32-softmmu,riscv32-linux-user "
+"--prefix=<TARGET_DIR> --disable-werror --enable-virtfs --enable-slirp make "
+"-j $(nproc) make install :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 17 (paragraph)
+msgid "::: code-tab bash 静态编译"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 18 (paragraph)
+msgid ""
+"mkdir build-static cd build-static ../configure --target-list=riscv64-linux-"
+"user,riscv32-linux-user --prefix=<TARGET_DIR> --disable-werror --static make"
+" -j $(nproc) make install ::: :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 19 (header)
+msgid "常见用法"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 20 (paragraph)
+msgid "对于直接下载的 QEMU 二进制程序 (非静态链接),我们在运行之前需要在系统中安装部分依赖库："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 22 (paragraph)
+msgid ""
+"apt update apt install -y libglib2.0-dev libpixman-1-dev libslirp-dev :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 24 (paragraph)
+msgid ""
+"yum install -y pixman.x86_64 libepoxy.x86_64 libslirp-devel.x86_64 ::: :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 25 (paragraph)
+msgid ""
+"QEMU 提供了两种模式：用户模式和系统模式， 这两种模式均可以通过-cpu 选项来指定模拟的 CPU，如 -cpu rv64,x-zcb-"
+"true,RUYISDK 目前常见的一些 cpu 选项如下："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 26 (paragraph)
+msgid "Extensions CPU Type extra options"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 27 (paragraph)
+msgid "Zca/Zcd rv32/64"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 28 (paragraph)
+msgid "Zcb rv32/64 x-zcb=true"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 29 (paragraph)
+msgid "Zcf rv32"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 30 (paragraph)
+msgid "Zcmp rv32/64 d=false,x-zcmp= true"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 31 (paragraph)
+msgid "Zcmt rv32/64 d=false,x-zcmt= true"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 32 (paragraph)
+msgid "rvv 0.7.1 rv32/64 v=true,vext_spec =\"v0.7.1\""
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 33 (paragraph)
+msgid "xthead\\* c910"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 34 (paragraph)
+msgid "xthead\\* + c910v rvv 0.7.1"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 35 (paragraph)
+msgid "rvv 1.0 rv32/64 v=true"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 36 (paragraph)
+msgid "xthead\\* + c908v rvv 1.0"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 37 (header)
+msgid "rvp 0.9.4 rv32/64 x-p=true"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 38 (paragraph)
+msgid ""
+"除了 CPU 选项，QEMU 的系统模式还提供-machine 选项用于制定模拟的开发板平台，RUYISDK 目前提供的常见平台及它们对应的默认 CPU"
+" 类型如下："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 39 (paragraph)
+msgid "Machines Default CPU"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 40 (paragraph)
+msgid "virt rv32/64"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 41 (paragraph)
+msgid "licheepirv c906fdv"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 42 (header)
+msgid "licheepi4a c910v"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 43 (paragraph)
+msgid "QEMU 命令举例："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 44 (paragraph)
+msgid "::: tabs ::: code-tab bash 系统模式命令"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 45 (paragraph)
+msgid ""
+"qemu-system-riscv64 -nographic -machine virt -cpu rv64,x=true -smp \"<vcpu-"
+"num>\" -m \"<memory-size>\" -bios <fw-path> -drive file=\"<image-"
+"path>\",format=qcow2,id=hd0 -object rng-random,filename=/dev/urandom,id=rng0"
+" -device virtio-vga -device virtio-rng-device,rng=rng0 -device virtio-blk-"
+"device,drive=hd0 -device virtio-net-device,netdev=usernet -netdev "
+"user,id=usernet,hostfwd=tcp::\"<ssh_port>\"-:22 -device qemu-xhci -usb "
+"-device usb-kbd -device usb-tablet :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 46 (paragraph)
+msgid "::: code-tab bash 用户模式命令"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 47 (paragraph)
+msgid "qemu-riscv64 -cpu rv64,v=true (-L <sysroot>) <program> ::: :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 48 (header)
+msgid "基于 qemu-user 的 native 环境"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 49 (paragraph)
+msgid "安装相关工具 (Ubuntu):"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 51 (paragraph)
+msgid ""
+"解压下载后的 sysroot 文件系统 (如 [openEuler sysroot](https://repo.tarsier-"
+"infra.com:8080/ruyisdk/sdk/3/openeuler-23.03-sysroot.tar.gz)) "
+"到<target_fs>目录下"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 52 (paragraph)
+msgid "通过 systemd-nspawn 进入 sysroot 环境："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 54 (paragraph)
+msgid "在切换入 sysroot 环境时也可以指定 qemu 的-cpu 选项，如："
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 56 (paragraph)
+msgid "在这之后，就可以在该模拟的 native 环境下进行相应的开发"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 57 (paragraph)
+msgid ""
+"根据需要可以将默认安装的 qemu-riscv64/32-static 程序替换成自身下载或者静态编译的 static qemu-"
+"riscv64/32程序,然后先禁用再使能binfmt中的qemu-riscv64/32选项,来让替换后的新程序生效,例如:"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 2 (header)
+msgid "创建编译的 ruyibuild 虚拟环境"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 3 (paragraph)
+msgid "如已配置，可跳过该步骤 更新 pip(可选)"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 17 (paragraph)
+msgid "创建编译配置用于初始化，例如 qemu_ubuntu2204.yaml 根据不同的构建目标和构建系统，创建不同的运行配置"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 20 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu_config_ubuntu2204.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 23 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu-user-static_config_ubuntu2204.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 24 (paragraph)
+msgid "::: code-tab bash openEuler 22.03"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 26 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu_config_oe2203.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 27 (paragraph)
+msgid "::: code-tab bash openEuler 22.03(static)"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 29 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu-user-static_config_oe2203.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 30 (paragraph)
+msgid "::: code-tab bash openEuler 23.03"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 32 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu_config_oe2303.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 33 (paragraph)
+msgid "::: code-tab bash openEuler 23.03(static)"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 35 (paragraph)
+msgid ""
+": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
+"qemu/qemu-user-static_config_oe2303.yaml ::: :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 36 (paragraph)
+msgid "初始化工作 执行以下命令创建工作目录， 后续自动下载的源码以及构建生成的软件包都会在此目录下"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 42 (paragraph)
+msgid "生成目标 qemu"
+msgstr ""
+
+#: ./tools/index.md:block 1 (header)
+msgid "RuyiSDK Tools"
+msgstr ""
+
+#: ./tools/index.md:block 2 (paragraph)
+msgid "RuyiSDK Tools 是 RuyiSDK 构建中使用的工具"
+msgstr ""
+
+#: ./tools/index.md:block 3 (paragraph)
+msgid "本章介绍 RuyiSDK Tools 的背景知识，以及如何编译和运行各种 RuyiSDK 提供的工具。具体内容如下："
+msgstr ""
+
+#: ./tools/index.md:block 4 (paragraph)
+msgid "::: {.toctree maxdepth=\"1\"} ruyibuild.rst ruyishell.rst :::"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 1 (header)
+msgid "ruyibuild 介绍"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 2 (header)
+msgid "功能介绍"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 3 (paragraph)
+msgid "ruyibuild 是一个辅助开发工具，不需要手动搭建复杂的环境和下载代码，只需要几条命令，就可以直接获取所需要的构建好的软件包。"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 4 (header)
+msgid "工作原理"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 5 (paragraph)
+msgid ""
+"ruyibuild 根据配置文件自动下载需要编译的源码和构建脚本，启动一个 docker 容器中，在 docker 容器中运行构建脚本来完成构建"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 6 (header)
+msgid "使用方法"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 7 (paragraph)
+msgid "下面以 ubuntu 系统为例来进行说明"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 8 (header)
+msgid "环境准备"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 9 (paragraph)
+msgid "ruyibuild 是由 python 编写而成，需要通过 pip 命令完成安装，"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 11 (paragraph)
+msgid "由于需要用到 docker 容器，所以需要安装 docker"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 13 (paragraph)
+msgid "确保不用加 sudo 就可以直接执行 docker 命令"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 15 (paragraph)
+msgid "下载 ruyibuild.wheel , 执行 pip 安装"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 18 (paragraph)
+msgid "执行以下命令创建工作目录， 后续自动下载的源码以及构建生成的软件包都会在此目录下"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 20 (paragraph)
+msgid "-d <directory> 表示要创建的工作目录，其中 <directory>可以是绝对路径也可以是相对路径"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 21 (paragraph)
+msgid ""
+"-f <ruyicfg_directory> 是可选参数，当需要从 git 仓库获取构建配置文件 config.yaml "
+"文件而不想通过手动修改时，需要添加这个参数，其中 <ruyicfg_directory> 是 包含 config.yaml 文件所在 git "
+"仓库的信息的 yaml 文件所在目录，格式如下："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 23 (paragraph)
+msgid "repo_url: config.yaml 文件所在 git 仓库地址"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 24 (paragraph)
+msgid "branch: config.yaml 文件所在 git 仓库分支"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 25 (paragraph)
+msgid ""
+"path: config.yaml 文件所在 git 仓库相对于根目录的位置，如果是存储在根目录，该栏位填写为 path: "
+"config_ubuntu.yaml"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 26 (paragraph)
+msgid "例如：执行"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 28 (paragraph)
+msgid "就是在当前目录下创建工作目录 qemu , 并从 /home/ruyicfg.yaml 获取 ruyicfg.yaml 文件"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 29 (paragraph)
+msgid "工作目录下会生成四个目录："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 30 (paragraph)
+msgid "build: 构建完成的相关文件会存放在该目录下"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 31 (paragraph)
+msgid "script: 存放执行构建的脚本"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 32 (paragraph)
+msgid "src: 存放需要构建的源码"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 33 (paragraph)
+msgid ""
+"./ruyibuild: 存放构建配置文件 config.yaml，如果命令设置的 -f 参数，该目录下还会生成一个 git 目录，用来存放从 git "
+"仓库获取的构建配置文件 config.yaml"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 34 (paragraph)
+msgid "可以根据自己的需求进行修改配置文件，文件内容如下："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 36 (paragraph)
+msgid "配置文件分为三部分："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "docker: 容器信息"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "docker: 需要使用的 docker 容器的镜像信息，包括："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "repo_url: docker 容器镜像地址"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "tag: docker 容器镜像 tag"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "basic_repo: 源码 git 仓库地址"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "basic_repo: 需要构建的源码 git 仓库信息，包括："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "repo_url: git 仓库地址"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "branch: 源码在仓库中的 branch"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "build_script: 执行构建的脚本 git 仓库信息，包括："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "repo_url: 脚本 git 仓库地址"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "branch: 脚本在 git 仓库中的 branch"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "path: 脚本在 git 仓库中相对于根目录的位置，如果是存储在根目录，该栏位填写为"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 37 (ordered list)
+msgid "path: qemu_ubuntu.sh"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 38 (paragraph)
+msgid ""
+"脚本会统一存放在 <https://github.com/ruyisdk/ruyici> "
+"，可以根据自己的需求选择合适的文件，或者也可以使用自己的脚本，关于脚本内容的要求后面会介绍"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 40 (paragraph)
+msgid "在工作目录下执行以下命令下载./ruyibuild/config.yaml 配置的 docker 镜像，需要构建源码和构建脚本"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 43 (paragraph)
+msgid "在工作目录下执行以下命令运行容器并执行构建"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 45 (paragraph)
+msgid "<name>表示构建完成后，生成的软件压缩包的包名。"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 46 (paragraph)
+msgid ""
+"执行该命令后，先运行容器，然后根据 config.yaml 中的 build_script 设置去工作目录下获取相应的脚本 xxx.sh，并执行 sh "
+"xxx.sh <name>"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 47 (paragraph)
+msgid ""
+"构建完成后，docker 容器会自动销毁，生成的软件压缩包会存放在工作目录下的 output 目录下，即在 output/<name>.tar "
+"就是构建出的软件压缩包"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 48 (header)
+msgid "ruyibuild 命令"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 49 (paragraph)
+msgid "ruyibuid 目前支持的命令如下："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 51 (header)
+msgid "执行构建脚本"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 52 (paragraph)
+msgid "容器和工作目录映射关系如下："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 54 (paragraph)
+msgid "从上面的对应关系，以及 3.2 中介绍的各个目录的作用，可以知道，在容器中："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 55 (paragraph)
+msgid "构建脚本路径是/home/script"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 56 (paragraph)
+msgid "所要构建的源码路径是/home/src"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 57 (paragraph)
+msgid "构建执行结果路路径是/home/build/<name> , <name>同 ruyibuild generate <name>"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 58 (paragraph)
+msgid "构建完成后，程序需要将构建结果从 <workspace>/build 中取出并打包放在 <workspace>/output 目录下"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 59 (paragraph)
+msgid "由于程序对于这些目录的要求，所以编写脚本时一定要注意这些目录，否则会导致构建无法正确执行，例如："
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 60 (paragraph)
+msgid "执行 cd /home/src 确保进入源码目录，再执行编译和构建"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 61 (paragraph)
+msgid ""
+"执行 ./configure 时，通过 --prefix=/home/build/1 "
+"来确保构建结果存放到容器中的/home/build/<name>下， 1 表示接收执行脚本命令 sh xxx.sh <name> 中的 <name>"
+msgstr ""
+
+#: ./tools/ruyibuild.md:block 62 (paragraph)
+msgid "下面是一个在 x86 ubuntu 容器中构建 qemu 的 shell 脚本的例子，供参考"
+msgstr ""
+
+#: ./tools/ruyishell.md:block 1 (header)
+msgid "ruyishell"
+msgstr ""
+
+#: ./tools/ruyishell.md:block 3 (paragraph)
+msgid "ruyishell 是一个辅助开发工具，不需要手动搭建复杂的环境和下载代码，只需要几条命令，就可以直接获取所需要的构建好的软件包。"
+msgstr ""
+
+#: ./tools/ruyishell.md:block 4 (header)
+msgid "命令"
+msgstr ""
+
+#: ./tools/ruyishell.md:block 5 (paragraph)
+msgid "ruyishell 目前支持的命令如下："
+msgstr ""

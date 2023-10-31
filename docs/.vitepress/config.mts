@@ -5,6 +5,25 @@ export default defineConfig({
   title: "RuyiSDK documentation",
   description: "RuyiSDK documentation",
   lastUpdated: true,
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh',
+      link: '/zh/'
+    },
+    en: {
+      label: 'English',
+      lang: 'en',
+      link: '/en/',
+      // override default config
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Doc', link: '/introduction/index' }
+        ],
+      }
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
