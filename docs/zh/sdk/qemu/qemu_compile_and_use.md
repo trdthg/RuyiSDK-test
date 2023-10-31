@@ -4,35 +4,25 @@
 
 安装依赖工具和库：
 
-::: tabs
-::: code-tab
-bash Ubuntu 22.04
-
+```bash
+# Ubuntu 22.04
 apt update apt install -y gcc git make ninja-build python3 python3-pip
 libglib2.0-dev libpixman-1-dev libslirp-dev
-:::
 
-::: code-tab
-bash Ubuntu 22.04(static)
 
+# Ubuntu 22.04(static)
 apt update apt install -y gcc git make ninja-build python3 python3-pip
 libglib2.0-dev libpixman-1-dev
-:::
 
-::: code-tab
-bash OpenEuler 22.03/23.03
-
+# OpenEuler 22.03/23.03
 yum install -y gcc git make glib2-devel.x86_64 ninja-build
 libcap-ng-devel.x86_64 libattr-devel.x86_64 libslirp-devel.x86_64
-:::
 
-::: code-tab
-bash OpenEuler 22.03/23.03(static)
+# OpenEuler 22.03/23.03(static)
 
 yum install -y gcc git make glib2-devel.x86_64 ninja-build
 libcap-ng-devel.x86_64 libattr-devel.x86_64 glib2-static.x86_64
-:::
-:::
+```
 
 下载 RUYI QEMU 源码：
 
@@ -44,25 +34,19 @@ git submodule update --init --recursive
 
 编译构建：
 
-::: tabs
-::: code-tab
-bash 普通编译
-
+```bash
+# 普通编译
 mkdir build cd build ../configure
 \--target-list=riscv64-softmmu,riscv64-linux-user,riscv32-softmmu,riscv32-linux-user
 \--prefix=\<TARGET_DIR\> \--disable-werror \--enable-virtfs
 \--enable-slirp make -j \$(nproc) make install
-:::
 
-::: code-tab
-bash 静态编译
-
+# 静态编译
 mkdir build-static cd build-static ../configure
 \--target-list=riscv64-linux-user,riscv32-linux-user
 \--prefix=\<TARGET_DIR\> \--disable-werror \--static make -j \$(nproc)
 make install
-:::
-:::
+```
 
 ## 常见用法
 
@@ -131,10 +115,8 @@ rv64,x-zcb-true,RUYISDK 目前常见的一些 cpu 选项如下：
 
 QEMU 命令举例：
 
-::: tabs
-::: code-tab
-bash 系统模式命令
-
+```bash
+# 系统模式命令
 qemu-system-riscv64 -nographic -machine virt -cpu rv64,x=true -smp
 \"\<vcpu-num\>\" -m \"\<memory-size\>\" -bios \<fw-path\> -drive
 file=\"\<image-path\>\",format=qcow2,id=hd0 -object
@@ -143,14 +125,10 @@ virtio-rng-device,rng=rng0 -device virtio-blk-device,drive=hd0 -device
 virtio-net-device,netdev=usernet -netdev
 user,id=usernet,hostfwd=tcp::\"\<ssh_port\>\"-:22 -device qemu-xhci -usb
 -device usb-kbd -device usb-tablet
-:::
 
-::: code-tab
-bash 用户模式命令
-
+# 用户模式命令
 qemu-riscv64 -cpu rv64,v=true (-L \<sysroot\>) \<program\>
-:::
-:::
+```
 
 ## 基于 qemu-user 的 native 环境
 
@@ -161,7 +139,7 @@ apt install binfmt-support qemu-user-static systemd-container
 ```
 
 解压下载后的 sysroot 文件系统 (如 [openEuler
-sysroot](https://repo.tarsier-infra.com:8080/ruyisdk/sdk/3/openeuler-23.03-sysroot.tar.gz)) 到\<target_fs\>目录下
+sysroot](https://repo.tarsier-infra.com:8080/ruyisdk/sdk/3/openeuler-23.03-sysroot.tar.gz)) 到`<target_fs>`目录下
 
 通过 systemd-nspawn 进入 sysroot 环境：
 

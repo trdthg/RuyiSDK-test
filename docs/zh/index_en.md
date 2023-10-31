@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /zh/introduction/index
+      link: /en/introduction/index
     - theme: alt
       text: Github
       link: https://github.com/ruyisdk/ruyi

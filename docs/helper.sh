@@ -76,7 +76,7 @@ while true; do
 				final_path="../$lang/$file"
 				folder_path="$(dirname "$final_path")"
 				mkdir -p "$folder_path"
-				$PO2MD "$file" -p "../po/$lang.po" --quiet --save "$final_path"
+				$PO2MD "$file" -p "../po/$lang.po" --wrapwidth 0 --quiet --save "$final_path"
 			done
 		done
 		;;

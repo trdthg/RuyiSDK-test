@@ -16,13 +16,13 @@ ruyibuild 根据配置文件自动下载需要编译的源码和构建脚本，�
 
 ruyibuild 是由 python 编写而成，需要通过 pip 命令完成安装，
 
-``` bash
+```bash
 sudo apt install python3 python3-pip
 ```
 
 由于需要用到 docker 容器，所以需要安装 docker
 
-``` bash
+```bash
 sudo apt install docker docker.io -y
 sudo groupadd docker
 sudo usermod -a -G docker $(whoami)
@@ -49,12 +49,12 @@ pip install <ruyibuild.wheel>
 ruyibuild init -d <directory> [-f <ruyicfg_directory>]
 ```
 
--d \<directory\> 表示要创建的工作目录，其中
-\<directory\>可以是绝对路径也可以是相对路径
+`-d <directory>` 表示要创建的工作目录，其中
+`<directory>` 可以是绝对路径也可以是相对路径
 
--f \<ruyicfg_directory\> 是可选参数，当需要从 git 仓库获取构建配置文件
+`-f <ruyicfg_directory>` 是可选参数，当需要从 git 仓库获取构建配置文件
 config.yaml 文件而不想通过手动修改时，需要添加这个参数，其中
-\<ruyicfg_directory\> 是 包含 config.yaml
+`<ruyicfg_directory>` 是 包含 config.yaml
 文件所在 git 仓库的信息的 yaml 文件所在目录，格式如下：
 
 ``` bash
@@ -142,12 +142,12 @@ ruyibuild update
 ruyibuild generate <name>
 ```
 
-\<name\>表示构建完成后，生成的软件压缩包的包名。
+`<name>`表示构建完成后，生成的软件压缩包的包名。
 
 执行该命令后，先运行容器，然后根据 config.yaml 中的 build_script
-设置去工作目录下获取相应的脚本 xxx.sh，并执行 sh xxx.sh \<name\>
+设置去工作目录下获取相应的脚本 xxx.sh，并执行 sh xxx.sh `<name>`
 
-构建完成后，docker 容器会自动销毁，生成的软件压缩包会存放在工作目录下的 output 目录下，即在 output/\<name\>.tar 就是构建出的软件压缩包
+构建完成后，docker 容器会自动销毁，生成的软件压缩包会存放在工作目录下的 output 目录下，即在 output/`<name>`.tar 就是构建出的软件压缩包
 
 ## ruyibuild 命令
 
@@ -177,19 +177,19 @@ ruyibuild generate <name>    //执行构建
 
 所要构建的源码路径是/home/src
 
-构建执行结果路路径是/home/build/\<name\> , \<name\>同 ruyibuild generate
-\<name\>
+构建执行结果路路径是 `/home/build/<name>` , `<name>`同 ruyibuild generate
+`<name>`
 
-构建完成后，程序需要将构建结果从 \<workspace\>/build 中取出并打包放在
-\<workspace\>/output 目录下
+构建完成后，程序需要将构建结果从 `<workspace>/build` 中取出并打包放在
+`<workspace>/output` 目录下
 
 由于程序对于这些目录的要求，所以编写脚本时一定要注意这些目录，否则会导致构建无法正确执行，例如：
 
 执行 cd /home/src 确保进入源码目录，再执行编译和构建
 
 执行 ./configure 时，通过 \--prefix=/home/build/1
-来确保构建结果存放到容器中的/home/build/\<name\>下，
-1 表示接收执行脚本命令 sh xxx.sh \<name\> 中的 \<name\>
+来确保构建结果存放到容器中的/home/build/`<name>`下，
+1 表示接收执行脚本命令 sh xxx.sh `<name> 中的 <name>`
 
 下面是一个在 x86 ubuntu 容器中构建 qemu 的 shell 脚本的例子，供参考
 

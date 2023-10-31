@@ -141,15 +141,11 @@ msgstr ""
 
 #: ./index.md:block 3 (paragraph)
 msgid ""
-"hero: name: \"RuyiSDK 文档\" text: \"Your best risc-v toolkit in the world!\" "
-"tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand text: 快速开始 "
-"link: /introduction/index - theme: alt text: Github link: "
-"https://github.com/ArielHeleneto/RuyiSDK-test"
+"hero: name: \"RuyiSDK 文档\" text: \"Maybe your best RISC-V toolkit in the "
+"world!\" tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand "
+"text: 快速开始 link: /zh/introduction/index - theme: alt text: Github link: "
+"https://github.com/ruyisdk/ruyi"
 msgstr ""
-"hero: name: \"RuyiSDK Doc\" text: \"Your best risc-v toolkit in the world!\" "
-"tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand text: 快速开始 "
-"link: /introduction/index - theme: alt text: Github link: "
-"https://github.com/ArielHeleneto/RuyiSDK-test"
 
 #: ./index.md:block 4 (paragraph)
 msgid "features:"
@@ -169,6 +165,68 @@ msgstr ""
 #: ./index.md:block 5 (unordered list)
 msgid ""
 "title: QEMU details: Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+msgstr ""
+
+#: ./index_en.md:block 3 (paragraph)
+msgid ""
+"hero: name: \"RuyiSDK 文档\" text: \"Maybe your best RISC-V toolkit in the "
+"world!\" tagline: 本手册包含了 RuyiSDK 如何构建、如何使用的相关内容。 actions: - theme: brand "
+"text: 快速开始 link: /en/introduction/index - theme: alt text: Github link: "
+"https://github.com/ruyisdk/ruyi"
+msgstr ""
+
+#: ./introduction/index.md:block 1 (header)
+msgid "介绍"
+msgstr ""
+
+#: ./introduction/index.md:block 2 (paragraph)
+msgid ""
+"RUYISDK 是一个旨在提供给一个一体化集成开发环境的产品计划。从 2023 年开始筹备，计划用三年时间为 RISC-V "
+"开发者提供一个完整的、全家桶式的全功能开发环境。"
+msgstr ""
+
+#: ./introduction/index.md:block 3 (header)
+msgid "RUYISDK 的目标"
+msgstr ""
+
+#: ./introduction/index.md:block 4 (ordered list)
+msgid ""
+"开发者购买了 (几乎) 任何一款 RISC-V 开发板或模组，都可以通过 RUYISDK 系统获得硬件资料说明、固件 / 软件更新、调试支持等。"
+msgstr ""
+
+#: ./introduction/index.md:block 4 (ordered list)
+msgid ""
+"开发者可以指定任何常用的 RISC-V 扩展指令集架构组合，都可以通过 RUYISDK 系统生成客户所需的操作系统、工具链、语言执行环境 "
+"(运行时或虚拟机)、计算库、应用框架等。尤其强调 RUYISDK 将完全支持 Vector 0.7.1 和 RVP 0.5.2 等已经大规模硅化的草案 "
+"标准 (or 厂商定制扩展)。"
+msgstr ""
+
+#: ./introduction/index.md:block 4 (ordered list)
+msgid "培育运营一个活跃全面的开发者交流社区。"
+msgstr ""
+
+#: ./introduction/index.md:block 5 (header)
+msgid "RUYISDK 架构示意图"
+msgstr ""
+
+#: ./introduction/index.md:block 6 (paragraph)
+msgid "![image](./images/ruyisdk.png)"
+msgstr ""
+
+#: ./introduction/index.md:block 7 (header)
+msgid "RuyiSDK 包含的内容"
+msgstr ""
+
+#: ./introduction/index.md:block 8 (header)
+msgid "RuyiSDK 包管理器"
+msgstr ""
+
+#: ./introduction/index.md:block 9 (paragraph)
+msgid "[GitHub 项目](https://github.com/ruyisdk/ruyi)。"
+msgstr ""
+
+#: ./introduction/index.md:block 10 (paragraph)
+msgid "[文档](../ruyi-package/index.md)"
 msgstr ""
 
 #: ./markdown-examples.md:block 1 (header)
@@ -232,6 +290,104 @@ msgstr ""
 
 #: ./plan/index.md:block 1 (header)
 msgid "title: 版本规划路线图"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 1 (header)
+msgid "Ruyi 包管理器"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 2 (paragraph)
+msgid "Ruyi 包管理器是设计为用于 RuyiSDK 的包管理器，用于管理工具链。"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 3 (header)
+msgid "安装包管理器"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 4 (paragraph)
+msgid ""
+"目前，您可以从 [Ruyi Mirror](https://mirror.iscas.ac.cn/ruyisdk/ruyi/testing/) "
+"下载预编译二进制文件并将其重命名为 `ruyi`。"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 6 (paragraph)
+msgid "然后将 `ruyi` 可执行文件加入 `$PATH`"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 8 (header)
+msgid "命令"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 9 (header)
+msgid "Update"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 10 (unordered list)
+msgid "将 RuyiSDK 元数据同步到本地存储"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 10 (unordered list)
+msgid "默认情况下，存储库克隆到 `$XDG_CACHE_HOME/ruyi/packages-index`"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 10 (unordered list)
+msgid "如果 `$XDG_CACHE_HOME` 未设置，则默认为 `~/.cache`"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 12 (header)
+msgid "List"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 13 (unordered list)
+msgid "列出可用的工具链"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 15 (header)
+msgid "Install"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 16 (paragraph)
+msgid "安装一个选定的包。"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 18 (header)
+msgid "移除一个包"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 19 (paragraph)
+msgid "TODO: 移除一个选定的包"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 21 (header)
+msgid "列出可用的 Profiles"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 22 (paragraph)
+msgid "TODO: 列出所有可用的 Profiles"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 24 (header)
+msgid "设置一个 Project"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 25 (paragraph)
+msgid "TODO: 设置一个 Project"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 27 (header)
+msgid "使用工具链编译"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 28 (paragraph)
+msgid "使用工具链。"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 30 (header)
+msgid "cmake & meson"
+msgstr ""
+
+#: ./ruyi-package/index.md:block 31 (paragraph)
+msgid "cmake & meson 支持尚不可用。"
 msgstr ""
 
 #: ./sdk/gcc10-rv64gcbpv_xthead_zfh/index.md:block 1 (paragraph)
@@ -1138,226 +1294,148 @@ msgstr ""
 msgid "安装依赖工具和库："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 4 (paragraph)
-msgid "::: tabs ::: code-tab bash Ubuntu 22.04"
-msgstr ""
-
 #: ./sdk/qemu/qemu_compile_and_use.md:block 5 (paragraph)
-msgid ""
-"apt update apt install -y gcc git make ninja-build python3 python3-pip "
-"libglib2.0-dev libpixman-1-dev libslirp-dev :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 6 (paragraph)
-msgid "::: code-tab bash Ubuntu 22.04(static)"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 7 (paragraph)
-msgid ""
-"apt update apt install -y gcc git make ninja-build python3 python3-pip "
-"libglib2.0-dev libpixman-1-dev :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 8 (paragraph)
-msgid "::: code-tab bash OpenEuler 22.03/23.03"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 9 (paragraph)
-msgid ""
-"yum install -y gcc git make glib2-devel.x86_64 ninja-build libcap-ng-"
-"devel.x86_64 libattr-devel.x86_64 libslirp-devel.x86_64 :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 10 (paragraph)
-msgid "::: code-tab bash OpenEuler 22.03/23.03(static)"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 11 (paragraph)
-msgid ""
-"yum install -y gcc git make glib2-devel.x86_64 ninja-build libcap-ng-"
-"devel.x86_64 libattr-devel.x86_64 glib2-static.x86_64 ::: :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 12 (paragraph)
 msgid "下载 RUYI QEMU 源码："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 14 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 7 (paragraph)
 msgid "编译构建："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 15 (paragraph)
-msgid "::: tabs ::: code-tab bash 普通编译"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 16 (paragraph)
-msgid ""
-"mkdir build cd build ../configure --target-"
-"list=riscv64-softmmu,riscv64-linux-user,riscv32-softmmu,riscv32-linux-user "
-"--prefix=<TARGET_DIR> --disable-werror --enable-virtfs --enable-slirp make "
-"-j $(nproc) make install :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 17 (paragraph)
-msgid "::: code-tab bash 静态编译"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 18 (paragraph)
-msgid ""
-"mkdir build-static cd build-static ../configure --target-list=riscv64-linux-"
-"user,riscv32-linux-user --prefix=<TARGET_DIR> --disable-werror --static make"
-" -j $(nproc) make install ::: :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 19 (header)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 9 (header)
 msgid "常见用法"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 20 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 10 (paragraph)
 msgid "对于直接下载的 QEMU 二进制程序 (非静态链接),我们在运行之前需要在系统中安装部分依赖库："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 22 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 11 (paragraph)
+msgid "::: tabs ::: code-tab bash Ubuntu 22.04"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 12 (paragraph)
 msgid ""
 "apt update apt install -y libglib2.0-dev libpixman-1-dev libslirp-dev :::"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 24 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 13 (paragraph)
+msgid "::: code-tab bash OpenEuler 22.03/23.03"
+msgstr ""
+
+#: ./sdk/qemu/qemu_compile_and_use.md:block 14 (paragraph)
 msgid ""
 "yum install -y pixman.x86_64 libepoxy.x86_64 libslirp-devel.x86_64 ::: :::"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 25 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 15 (paragraph)
 msgid ""
 "QEMU 提供了两种模式：用户模式和系统模式， 这两种模式均可以通过-cpu 选项来指定模拟的 CPU，如 -cpu rv64,x-zcb-"
 "true,RUYISDK 目前常见的一些 cpu 选项如下："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 26 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 16 (paragraph)
 msgid "Extensions CPU Type extra options"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 27 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 17 (paragraph)
 msgid "Zca/Zcd rv32/64"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 28 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 18 (paragraph)
 msgid "Zcb rv32/64 x-zcb=true"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 29 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 19 (paragraph)
 msgid "Zcf rv32"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 30 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 20 (paragraph)
 msgid "Zcmp rv32/64 d=false,x-zcmp= true"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 31 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 21 (paragraph)
 msgid "Zcmt rv32/64 d=false,x-zcmt= true"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 32 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 22 (paragraph)
 msgid "rvv 0.7.1 rv32/64 v=true,vext_spec =\"v0.7.1\""
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 33 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 23 (paragraph)
 msgid "xthead\\* c910"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 34 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 24 (paragraph)
 msgid "xthead\\* + c910v rvv 0.7.1"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 35 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 25 (paragraph)
 msgid "rvv 1.0 rv32/64 v=true"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 36 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 26 (paragraph)
 msgid "xthead\\* + c908v rvv 1.0"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 37 (header)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 27 (header)
 msgid "rvp 0.9.4 rv32/64 x-p=true"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 38 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 28 (paragraph)
 msgid ""
 "除了 CPU 选项，QEMU 的系统模式还提供-machine 选项用于制定模拟的开发板平台，RUYISDK 目前提供的常见平台及它们对应的默认 CPU"
 " 类型如下："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 39 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 29 (paragraph)
 msgid "Machines Default CPU"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 40 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 30 (paragraph)
 msgid "virt rv32/64"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 41 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 31 (paragraph)
 msgid "licheepirv c906fdv"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 42 (header)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 32 (header)
 msgid "licheepi4a c910v"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 43 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 33 (paragraph)
 msgid "QEMU 命令举例："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 44 (paragraph)
-msgid "::: tabs ::: code-tab bash 系统模式命令"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 45 (paragraph)
-msgid ""
-"qemu-system-riscv64 -nographic -machine virt -cpu rv64,x=true -smp \"<vcpu-"
-"num>\" -m \"<memory-size>\" -bios <fw-path> -drive file=\"<image-"
-"path>\",format=qcow2,id=hd0 -object rng-random,filename=/dev/urandom,id=rng0"
-" -device virtio-vga -device virtio-rng-device,rng=rng0 -device virtio-blk-"
-"device,drive=hd0 -device virtio-net-device,netdev=usernet -netdev "
-"user,id=usernet,hostfwd=tcp::\"<ssh_port>\"-:22 -device qemu-xhci -usb "
-"-device usb-kbd -device usb-tablet :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 46 (paragraph)
-msgid "::: code-tab bash 用户模式命令"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 47 (paragraph)
-msgid "qemu-riscv64 -cpu rv64,v=true (-L <sysroot>) <program> ::: :::"
-msgstr ""
-
-#: ./sdk/qemu/qemu_compile_and_use.md:block 48 (header)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 35 (header)
 msgid "基于 qemu-user 的 native 环境"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 49 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 36 (paragraph)
 msgid "安装相关工具 (Ubuntu):"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 51 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 38 (paragraph)
 msgid ""
 "解压下载后的 sysroot 文件系统 (如 [openEuler sysroot](https://repo.tarsier-"
 "infra.com:8080/ruyisdk/sdk/3/openeuler-23.03-sysroot.tar.gz)) "
-"到<target_fs>目录下"
+"到`<target_fs>`目录下"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 52 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 39 (paragraph)
 msgid "通过 systemd-nspawn 进入 sysroot 环境："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 54 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 41 (paragraph)
 msgid "在切换入 sysroot 环境时也可以指定 qemu 的-cpu 选项，如："
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 56 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 43 (paragraph)
 msgid "在这之后，就可以在该模拟的 native 环境下进行相应的开发"
 msgstr ""
 
-#: ./sdk/qemu/qemu_compile_and_use.md:block 57 (paragraph)
+#: ./sdk/qemu/qemu_compile_and_use.md:block 44 (paragraph)
 msgid ""
 "根据需要可以将默认安装的 qemu-riscv64/32-static 程序替换成自身下载或者静态编译的 static qemu-"
 "riscv64/32程序,然后先禁用再使能binfmt中的qemu-riscv64/32选项,来让替换后的新程序生效,例如:"
@@ -1379,6 +1457,10 @@ msgstr ""
 msgid ""
 ": repo_url: <https://github.com/ruyisdk/ruyici.git> branch: main path: "
 "qemu/qemu_config_ubuntu2204.yaml :::"
+msgstr ""
+
+#: ./sdk/qemu/qemu_ruyibuild.md:block 21 (paragraph)
+msgid "::: code-tab bash Ubuntu 22.04(static)"
 msgstr ""
 
 #: ./sdk/qemu/qemu_ruyibuild.md:block 23 (paragraph)
@@ -1505,13 +1587,13 @@ msgid "执行以下命令创建工作目录， 后续自动下载的源码以及
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 20 (paragraph)
-msgid "-d <directory> 表示要创建的工作目录，其中 <directory>可以是绝对路径也可以是相对路径"
+msgid "`-d <directory>` 表示要创建的工作目录，其中 `<directory>` 可以是绝对路径也可以是相对路径"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 21 (paragraph)
 msgid ""
-"-f <ruyicfg_directory> 是可选参数，当需要从 git 仓库获取构建配置文件 config.yaml "
-"文件而不想通过手动修改时，需要添加这个参数，其中 <ruyicfg_directory> 是 包含 config.yaml 文件所在 git "
+"`-f <ruyicfg_directory>` 是可选参数，当需要从 git 仓库获取构建配置文件 config.yaml "
+"文件而不想通过手动修改时，需要添加这个参数，其中 `<ruyicfg_directory>` 是 包含 config.yaml 文件所在 git "
 "仓库的信息的 yaml 文件所在目录，格式如下："
 msgstr ""
 
@@ -1634,18 +1716,18 @@ msgid "在工作目录下执行以下命令运行容器并执行构建"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 45 (paragraph)
-msgid "<name>表示构建完成后，生成的软件压缩包的包名。"
+msgid "`<name>`表示构建完成后，生成的软件压缩包的包名。"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 46 (paragraph)
 msgid ""
 "执行该命令后，先运行容器，然后根据 config.yaml 中的 build_script 设置去工作目录下获取相应的脚本 xxx.sh，并执行 sh "
-"xxx.sh <name>"
+"xxx.sh `<name>`"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 47 (paragraph)
 msgid ""
-"构建完成后，docker 容器会自动销毁，生成的软件压缩包会存放在工作目录下的 output 目录下，即在 output/<name>.tar "
+"构建完成后，docker 容器会自动销毁，生成的软件压缩包会存放在工作目录下的 output 目录下，即在 output/`<name>`.tar "
 "就是构建出的软件压缩包"
 msgstr ""
 
@@ -1678,11 +1760,12 @@ msgid "所要构建的源码路径是/home/src"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 57 (paragraph)
-msgid "构建执行结果路路径是/home/build/<name> , <name>同 ruyibuild generate <name>"
+msgid ""
+"构建执行结果路路径是 `/home/build/<name>` , `<name>`同 ruyibuild generate `<name>`"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 58 (paragraph)
-msgid "构建完成后，程序需要将构建结果从 <workspace>/build 中取出并打包放在 <workspace>/output 目录下"
+msgid "构建完成后，程序需要将构建结果从 `<workspace>/build` 中取出并打包放在 `<workspace>/output` 目录下"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 59 (paragraph)
@@ -1696,7 +1779,8 @@ msgstr ""
 #: ./tools/ruyibuild.md:block 61 (paragraph)
 msgid ""
 "执行 ./configure 时，通过 --prefix=/home/build/1 "
-"来确保构建结果存放到容器中的/home/build/<name>下， 1 表示接收执行脚本命令 sh xxx.sh <name> 中的 <name>"
+"来确保构建结果存放到容器中的/home/build/`<name>`下， 1 表示接收执行脚本命令 sh xxx.sh `<name> 中的 "
+"<name>`"
 msgstr ""
 
 #: ./tools/ruyibuild.md:block 62 (paragraph)
@@ -1709,10 +1793,6 @@ msgstr ""
 
 #: ./tools/ruyishell.md:block 3 (paragraph)
 msgid "ruyishell 是一个辅助开发工具，不需要手动搭建复杂的环境和下载代码，只需要几条命令，就可以直接获取所需要的构建好的软件包。"
-msgstr ""
-
-#: ./tools/ruyishell.md:block 4 (header)
-msgid "命令"
 msgstr ""
 
 #: ./tools/ruyishell.md:block 5 (paragraph)
